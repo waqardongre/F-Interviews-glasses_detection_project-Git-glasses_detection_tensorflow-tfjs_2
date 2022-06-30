@@ -90,7 +90,7 @@ function predictWebcamTF() {
 }
 //const imageSize = 512;
 //Match prob. threshold for object detection:
-var classProbThreshold = 0.50 * 100;//50%
+var classProbThreshold = 0.75 * 100;//75%
 //Image detects object that matches the preset:
 async function detectTFMOBILE(imgToPredict) {
 
