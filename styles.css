@@ -19,7 +19,7 @@ button {
     padding: 10px 30px;
     background-color: #0060DF;
     border: solid 1px #0060DF;
-    color: #FFF;
+    color: rgb(0, 255, 0);
     pointer-events: all;
     transition: .2s ease;
     position: absolute;
