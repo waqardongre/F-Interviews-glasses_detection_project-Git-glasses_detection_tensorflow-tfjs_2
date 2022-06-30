@@ -111,7 +111,7 @@ async function detectTFMOBILE(imgToPredict) {
     let predictions = await model.executeAsync(tf4d);
     
     //Draw box around the detected object:
-    renderPredictionBoxes(predictions[4].dataSync(), predictions[1].dataSync(), predictions[2].dataSync());
+    renderPredictionBoxes(predictions[3].dataSync(), predictions[7].dataSync(), predictions[4].dataSync());
     //Dispose of the tensors (so it won't consume memory)
     tfImg.dispose();
     smallImg.dispose();
