@@ -64,7 +64,7 @@ function enableCam(event) {
 
 
 var model = undefined;
-model_url = 'https://raw.githubusercontent.com/waqardongre/glasses_detection_tensorflow-tfjs-2/master/model/mobile_netv2/web_model2/model.json';
+model_url = 'https://raw.githubusercontent.com/waqardongre/glasses_detection_tensorflow-tfjs-2/master/models/tfjs_model/model.json';
 //Call load function
 asyncLoadModel(model_url);
 
