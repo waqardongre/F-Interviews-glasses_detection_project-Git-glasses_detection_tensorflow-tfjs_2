@@ -148,7 +148,7 @@ const width_ = (maxX-minX).toFixed(0);
                 'top: ' + minY + 'px; ' +
                 'width: ' + width_ + 'px; ' +
                 'height: ' + height_ + 'px;';
-            highlighter.innerHTML = '<p>'+Math.round(score) + '% ' + 'Your Object Name'+'</p>';
+            highlighter.innerHTML = '<p>'+Math.round(score) + '% ' + 'Glasses'+'</p>';
             liveView.appendChild(highlighter);
             children.push(highlighter);
         }
