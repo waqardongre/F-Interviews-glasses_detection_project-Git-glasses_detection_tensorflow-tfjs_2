@@ -19,7 +19,7 @@ button {
     padding: 10px 30px;
     background-color: #0060DF;
     border: solid 1px #0060DF;
-    color: rgb(0, 255, 0);
+    color: #FFF;
     pointer-events: all;
     transition: .2s ease;
     position: absolute;
@@ -49,13 +49,13 @@ button {
     padding: 5px;
     z-index: 2;
     font-size: 30px;
-    color: white;
+    color: rgb(0, 255, 0);
     position: absolute;
 }
 
 .highlighter {
-    border: 2px solid white;
-    box-shadow: 0 0 50px 0 white;
+    border: 4px solid rgb(0, 255, 0);
+    box-shadow: 0 0 0px 0 white;
     z-index: 1;
     position: fixed;
     display: grid;

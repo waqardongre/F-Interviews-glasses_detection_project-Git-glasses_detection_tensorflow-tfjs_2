@@ -90,7 +90,7 @@ function predictWebcamTF() {
 }
 //const imageSize = 512;
 //Match prob. threshold for object detection:
-var classProbThreshold = 0.75;//75%
+var classProbThreshold = 0.50 * 100;//50%
 //Image detects object that matches the preset:
 async function detectTFMOBILE(imgToPredict) {
 
@@ -140,8 +140,8 @@ function renderPredictionBoxes (predictionBoxes, predictionClasses, predictionSc
         const score = predictionScores[i * 3] * 100;
 const width_ = (maxX-minX).toFixed(0);
         const height_ = (maxY-minY).toFixed(0);
-//If confidence is above 70%
-        if (score > 70 && score < 100){
+//If confidence is above threshold% in classProbThreshold variable
+        if (score > classProbThreshold && score < 100){
             const highlighter = document.createElement('div');
             highlighter.setAttribute('class', 'highlighter');
             highlighter.style = 'left: ' + minX + 'px; ' +
